@@ -50,67 +50,67 @@ class RouteServiceProvider extends ServiceProvider
             Route::prefix('auth')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/auth_api.php'));
+                ->group(base_path('routes/auth/auth_api.php'));
 
             Route::prefix('verification')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/verification_api.php'));
+                ->group(base_path('routes/auth/verification_api.php'));
 
             Route::prefix('member_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/member_api.php'));
+                ->group(base_path('routes/tenant/member_api.php'));
 
             Route::prefix('proposal_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/proposal_api.php'));
+                ->group(base_path('routes/tenant/proposal_api.php'));
             
             Route::prefix('proposal_konten_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/proposal_konten_api.php'));
+                ->group(base_path('routes/tenant/proposal_konten_api.php'));
 
             Route::prefix('juri_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/juri_api.php'));
+                ->group(base_path('routes/juri/juri_api.php'));
                 
             Route::prefix('penilaian_juri_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/penilaian_juri_api.php'));
+                ->group(base_path('routes/juri/penilaian_juri_api.php'));
                 
             Route::prefix('mentor_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/mentor_api.php'));
+                ->group(base_path('routes/mentor/mentor_api.php'));
 
             Route::prefix('coworking_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/workspace_api.php'));
+                ->group(base_path('routes/cowork/workspace_api.php'));
             
             Route::prefix('file_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/file_api.php'));
+                ->group(base_path('routes/file upload/file_api.php'));
 
             Route::prefix('addalatsewa_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/addalatsewa_api.php'));
+                ->group(base_path('routes/tenant/addalatsewa_api.php'));
 
             Route::prefix('profiletalent_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/profiletalent_api.php'));
+                ->group(base_path('routes/talent/profiletalent_api.php'));
 
             Route::prefix('usersewaalat_api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/usersewaalat_api.php'));
+                ->group(base_path('routes/tenant/usersewaalat_api.php'));
         });
     }
     
