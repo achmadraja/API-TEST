@@ -58,7 +58,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "\"Hello STP-API\"",
+                            "body": "\"Hello API-TEST\"",
                             "name": ""
                         }
                     ]

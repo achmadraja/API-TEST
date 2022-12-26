@@ -26,7 +26,7 @@ $api =  app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
     $api->get('/test', function () {
-        return 'Hello STP-API';
+        return 'Hello API-TEST';
     });
     
 });

@@ -33,7 +33,7 @@ paths:
             application/json:
               schema:
                 type: string
-                example: 'Hello STP-API'
+                example: 'Hello API-TEST'
       tags:
         - Endpoints
       security: []

@@ -21,7 +21,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '"Hello STP-API"'
+        content: '"Hello API-TEST"'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
