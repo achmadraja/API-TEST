@@ -19,7 +19,7 @@ class AddAlatSewaController extends Controller
     {
         $input = $request->all();
         $validator = Validator::make($input, [
-            'nama_alat'=> 'required',
+            'nama_alat'=> 'required',  
             'no_seri' => 'required',
             'merk' => 'required',
             'tahun_pembelian' => 'required',
